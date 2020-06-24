@@ -6,6 +6,8 @@
 * If you got lag issues, try to play with `-m1360` and `-b10M`
 ## Join to our group: 
 * Telegram Group: https://t.me/AndroidDesktop
+## Demostration video:
+* Link: https://youtu.be/n6CgGz_69eI
 ## This batch script uses using the following elements:
 * Scrcpy: https://github.com/Genymobile/scrcpy
 * Taskbar Launcher: https://github.com/farmerbb/Taskbar
