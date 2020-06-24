@@ -8,7 +8,7 @@
 * Telegram Group: https://t.me/AndroidDesktop
 ## Demostration video:
 * Link: https://youtu.be/n6CgGz_69eI
-## This batch script uses using the following elements:
+## This batch script uses the following elements:
 * Scrcpy: https://github.com/Genymobile/scrcpy
 * Taskbar Launcher: https://github.com/farmerbb/Taskbar
 * Niagara Launcher: https://github.com/8bitPit/Niagara-Issues
