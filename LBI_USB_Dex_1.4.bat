@@ -1,5 +1,5 @@
 @echo off
-echo "STARTING ANDROID DESKTOP (SCRIPT MADE BY LIGHT BLACK INFINITUM) CHECK US: https://t.me/AndroidDesktop"
+echo "STARTING ANDROID DESKTOP (SCRIPT MADE BY LIGHT BLACK INFINITUM) CHECK OUR GROUP: https://t.me/AndroidDesktop"
 cd "c:\adb\"
 adb devices
 echo "=================================STARTING DESKTOP MODE======================================"
@@ -16,7 +16,6 @@ adb -s DEVICE_ID shell input keyevent 3
 
 
 scrcpy -s DEVICE_ID --render-driver=direct3d --rotation 0 -m1360 -b10M -f -w --window-title 'INFINITUM-DESKTOP'
-
 
 
 echo "=================================EXITING DESKTOP MODE======================================="
