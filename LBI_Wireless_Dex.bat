@@ -5,7 +5,7 @@ adb kill-server
 adb start-server
 adb -s DEVICE_ID tcpip 5555
 adb devices
-adb connect DEVICE_IP
+adb connect DEVICE_IP:5555
 echo "=================================STARTING DESKTOP MODE======================================"
 adb -s DEVICE_IP:5555 shell settings put system accelerometer_rotation 0 
 adb -s DEVICE_IP:5555 shell settings put system user_rotation 3
