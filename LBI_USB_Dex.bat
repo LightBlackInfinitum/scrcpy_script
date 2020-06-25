@@ -15,7 +15,7 @@ echo "=================================INICIATING DESKTOP MODE AND GOING TO HOME
 adb -s DEVICE_ID shell input keyevent 3
 
 
-scrcpy -s DEVICE_ID --render-driver=direct3d --rotation 0 -m1360 -b10M -f -w --window-title 'INFINITUM-DESKTOP'
+scrcpy -s DEVICE_ID --render-driver=opengl --rotation 0 -m1360 -b10M -f -Sw --window-title 'INFINITUM-DESKTOP'
 
 
 echo "=================================EXITING DESKTOP MODE======================================="
