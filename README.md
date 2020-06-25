@@ -12,7 +12,7 @@ The following script automates the scrcpy connection with your phone and simulat
 ## More Information:
 * [Telegram Group](https://t.me/AndroidDesktop)
 * [Demostration video](https://youtu.be/n6CgGz_69eI)
-## This batch script uses the following elements to work:
+## This batch script uses the below elements to work:
 * [Scrcpy](https://github.com/Genymobile/scrcpy)
 * [Taskbar Launcher](https://github.com/farmerbb/Taskbar)
 * [Niagara Launcher](https://github.com/8bitPit/Niagara-Issues)
