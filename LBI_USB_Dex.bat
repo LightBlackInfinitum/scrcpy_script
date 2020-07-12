@@ -13,6 +13,7 @@ echo "=================================DELETING ON SCREEN KEYBOARD==============
 adb -s DEVICE_ID shell ime set com.wparam.nullkeyboard/.NullKeyboard
 echo "=================================INICIATING DESKTOP MODE AND GOING TO HOME SCREEN==========="
 adb -s DEVICE_ID shell input keyevent 3
+adb -s DEVICE_ID shell input keyevent 3
 
 
 scrcpy -s DEVICE_ID --render-driver=opengl --rotation 0 -m1360 -b10M -f -Sw --window-title 'INFINITUM-DESKTOP'
@@ -28,6 +29,7 @@ adb -s DEVICE_ID shell settings put system user_rotation 1
 echo "=================================CONVERTING TO PHONE STYLE================================="
 adb -s DEVICE_ID shell wm density 360
 echo "=================================GOING TO HOME SCREEN======================================"
+adb -s DEVICE_ID shell input keyevent 3
 adb -s DEVICE_ID shell input keyevent 3
 echo "QUIT SUCESS, PRESS ANY KEY TO CLOSE THIS WINDOW. REMEMBER VISIT US: https://t.me/AndroidDesktop"
 pause
