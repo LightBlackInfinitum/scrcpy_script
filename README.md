@@ -10,7 +10,7 @@ The following script automates the scrcpy connection with your phone and simulat
 * If you got lag issues, try to play with `-m1360` and `-b10M`
 * WIRELESS SCRIPT: Screen Time Out value 60000 = 1 minute
 * For more shortcuts, check scrcpy repository
-## More Information:
+## More Information: 
 * [Telegram Group](https://t.me/AndroidDesktop)
 * [Demostration video](https://youtu.be/n6CgGz_69eI)
 ## This batch script uses the below elements to work:
