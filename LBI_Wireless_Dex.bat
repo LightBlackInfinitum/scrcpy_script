@@ -16,11 +16,12 @@ adb -s DEVICE_IP:5555 shell wm density 215
 echo "=================================DELETING ON SCREEN KEYBOARD================================"
 adb -s DEVICE_IP:5555 shell ime set com.wparam.nullkeyboard/.NullKeyboard
 echo "=================================INICIATING DESKTOP MODE AND GOING TO HOME SCREEN==========="
+adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 2147483647
 adb -s DEVICE_IP:5555 shell input keyevent 3
 adb -s DEVICE_IP:5555 shell input keyevent 3
 
 
-scrcpy -s DEVICE_IP:5555 --render-driver=opengl --rotation 0 -m1280 -b4M -f -Sw --window-title 'INFINITUM-DESKTOP'
+scrcpy -s DEVICE_IP:5555 --render-driver=opengl --rotation 0 -m1280 -b4M -f -w --window-title 'INFINITUM-DESKTOP'
 
 
 echo "=================================EXITING DESKTOP MODE======================================="
@@ -33,6 +34,7 @@ adb -s DEVICE_IP:5555 shell settings put system user_rotation 1
 echo "=================================CONVERTING TO PHONE STYLE================================="
 adb -s DEVICE_IP:5555 shell wm density 360
 echo "=================================GOING TO HOME SCREEN======================================"
+adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 60000
 adb -s DEVICE_IP:5555 shell input keyevent 3
 adb -s DEVICE_IP:5555 shell input keyevent 3
 echo "QUIT SUCESS, PRESS ANY KEY TO CLOSE THIS WINDOW. REMEMBER VISIT US: https://t.me/AndroidDesktop"
