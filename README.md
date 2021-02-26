@@ -11,9 +11,9 @@ The following script automates the scrcpy connection with your phone and simulat
 * WIRELESS SCRIPT: Screen Time Out value 60000 = 1 minute
 * For more shortcuts, check scrcpy repository
 ## More Information: 
-* [Telegram Group](https://t.me/AndroidDesktop)
+* [Telegram Group](https://t.me/joinchat/SLlAIfdCFxLeexVB)
 * [Demostration video](https://youtu.be/n6CgGz_69eI)
-## This batch script uses the below elements to work:
+## This batch script need the below elements to work:
 * [Scrcpy](https://github.com/Genymobile/scrcpy)
 * [Taskbar Launcher](https://github.com/farmerbb/Taskbar)
 * [Niagara Launcher](https://github.com/8bitPit/Niagara-Issues)
