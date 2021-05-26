@@ -1,35 +1,50 @@
 @echo off
-echo "STARTING ANDROID DESKTOP (SCRIPT MADE BY LIGHT BLACK INFINITUM) CHECK OUR GROUP: https://t.me/AndroidDesktop"
+
+REM ADB Patch
 cd "c:\adb\"
-adb devices
-echo "=================================STARTING DESKTOP MODE======================================"
-adb -s DEVICE_ID shell settings put system accelerometer_rotation 0 
-adb -s DEVICE_ID shell settings put system user_rotation 3
-echo "=================================LOADING DESKTOP SCREEN MODE================================"
-adb -s DEVICE_ID shell cmd package set-home-activity com.farmerbb.taskbar/.activity.HomeActivity
-echo "=================================CONVERTING TO DESKTOP STYLE================================"
+
+REM Device Information (optional)
+adb -s DEVICE_ID shell wm density
+adb -s DEVICE_ID shell wm size 
+adb -s DEVICE_ID shell getprop ro.product.model
+adb -s DEVICE_ID shell getprop ro.build.version.release
+adb -s DEVICE_ID shell getprop ro.product.board
+adb -s DEVICE_ID shell dumpsys battery
+
+REM Screen
+adb -s DEVICE_ID shell wm size 1920x1080
 adb -s DEVICE_ID shell wm density 215
-echo "=================================DELETING ON SCREEN KEYBOARD================================"
+
+REM Launcher
+adb -s DEVICE_ID shell settings put global policy_control immersive.full=*
+adb -s DEVICE_ID shell cmd package set-home-activity com.farmerbb.taskbar/.activity.HomeActivity
+adb -s DEVICE_ID shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+REM Rotation
+adb -s DEVICE_ID shell content insert --uri content://settings/system --bind name:s:accelerometer_rotation --bind value:i:0
+
+REM Keyboard
 adb -s DEVICE_ID shell ime set com.wparam.nullkeyboard/.NullKeyboard
-echo "=================================INICIATING DESKTOP MODE AND GOING TO HOME SCREEN==========="
-adb -s DEVICE_ID shell input keyevent 3
-adb -s DEVICE_ID shell input keyevent 3
 
 
-scrcpy -s DEVICE_ID --render-driver=opengl --rotation 0 -m1360 -b10M -f -Sw --window-title 'INFINITUM-DESKTOP'
+REM Scrcpy
+scrcpy -s DEVICE_ID --render-driver=direct3d -m1366 -b80M --max-fps 30 -f -Sw --disable-screensaver --window-title 'ANDROID-DESKTOP'
 
 
-echo "=================================EXITING DESKTOP MODE======================================="
-echo "=================================RESTORING ON SCREEN KEYBOARD==============================="
+REM Screen
+adb -s DEVICE_ID shell wm size reset
+adb -s DEVICE_ID shell wm density reset
+
+REM Rotation
+adb -s DEVICE_ID shell content insert --uri content://settings/system --bind name:s:accelerometer_rotation --bind value:i:1
+
+REM Keyboard
 adb -s DEVICE_ID shell ime set com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
-echo "=================================LOADING PHONE MOBILE SCREEN==============================="
+
+REM Launcher
 adb -s DEVICE_ID shell cmd package set-home-activity bitpit.launcher/.ui.HomeActivity
-adb -s DEVICE_ID shell settings put system accelerometer_rotation 1
-adb -s DEVICE_ID shell settings put system user_rotation 1
-echo "=================================CONVERTING TO PHONE STYLE================================="
-adb -s DEVICE_ID shell wm density 360
-echo "=================================GOING TO HOME SCREEN======================================"
-adb -s DEVICE_ID shell input keyevent 3
-adb -s DEVICE_ID shell input keyevent 3
-echo "QUIT SUCESS, PRESS ANY KEY TO CLOSE THIS WINDOW. REMEMBER VISIT US: https://t.me/AndroidDesktop"
+adb -s DEVICE_ID shell settings put global policy_control null*
+adb -s DEVICE_ID shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
 pause
