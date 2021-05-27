@@ -28,7 +28,7 @@ adb -s DEVICE_ID shell ime set com.wparam.nullkeyboard/.NullKeyboard
 
 
 REM Scrcpy
-scrcpy -s DEVICE_ID --render-driver=direct3d -m1366 -b80M --max-fps 30 -f -Sw --disable-screensaver --window-title 'ANDROID-DESKTOP'
+scrcpy -s DEVICE_ID --render-driver=direct3d --rotation 0 -m1366 -b80M --max-fps 30 -f -Sw --disable-screensaver --window-title 'ANDROID-DESKTOP'
 
 
 REM Screen
