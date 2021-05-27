@@ -1,11 +1,12 @@
 @echo off
 
-REM ADB Connecting
+REM ADB Patch
 cd "c:\adb\"
+
+REM ADB Connecting
 adb kill-server
 adb start-server
 adb -s DEVICE_ID tcpip 5555
-adb devices
 adb connect DEVICE_IP:5555
 
 REM Device Information (optional)
