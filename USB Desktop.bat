@@ -33,6 +33,7 @@ adb -s DEVICE_ID shell cmd vibrator vibrate 100
 adb -s DEVICE_ID shell cmd vibrator vibrate 100
 adb -s DEVICE_ID shell cmd vibrator vibrate 100
 
+
 REM Scrcpy
 scrcpy -s DEVICE_ID --render-driver=direct3d --rotation 0 -m1366 -b80M --max-fps 30 -f -Sw --disable-screensaver --window-title 'ANDROID-DESKTOP'
 
