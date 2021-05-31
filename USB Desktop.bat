@@ -27,6 +27,11 @@ adb -s DEVICE_ID shell content insert --uri content://settings/system --bind nam
 REM Keyboard
 adb -s DEVICE_ID shell ime set com.wparam.nullkeyboard/.NullKeyboard
 
+REM Stuff
+adb -s DEVICE_ID shell cmd vibrator vibrate 100
+adb -s DEVICE_ID shell cmd vibrator vibrate 100
+adb -s DEVICE_ID shell cmd vibrator vibrate 100
+adb -s DEVICE_ID shell cmd vibrator vibrate 100
 
 REM Scrcpy
 scrcpy -s DEVICE_ID --render-driver=direct3d --rotation 0 -m1366 -b80M --max-fps 30 -f -Sw --disable-screensaver --window-title 'ANDROID-DESKTOP'
@@ -47,6 +52,9 @@ REM Launcher
 adb -s DEVICE_ID shell cmd package set-home-activity bitpit.launcher/.ui.HomeActivity
 adb -s DEVICE_ID shell settings put global policy_control null*
 adb -s DEVICE_ID shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+REM Stuff
+adb -s DEVICE_ID shell cmd vibrator vibrate 100
 
 echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
 pause
