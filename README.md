@@ -5,12 +5,19 @@ The following script automates the scrcpy connection with your phone and simulat
 ## Instructions Tips:
 * In the batch script replace `DEVICE_ID` with the ID/IP of your device.
 * In Taskbar Launcher, you must activate "Replace Home Screen"
+
 ## Useful Notes: 
 * You can change render driver between opengl and direct3d on `--render-driver=direct3d`
 * If you got lag issues, try to play with `-m1360` and `-b10M`
 * WIRELESS SCRIPT: Screen Time Out value 60000 = 1 minute
 * You can play with your phone resolution and aspect ratio using "adb shell wm size"
 * For more shortcuts, check scrcpy repository
+-
+* Font Scale Values:
+* * Small: 0.85
+* * Default: 1.0
+* * Large: 1.15
+* * Lagest: 1.30
 ## More Information: 
 * [Telegram Group](https://t.me/joinchat/SLlAIfdCFxLeexVB)
 * [Demostration video](https://youtu.be/n6CgGz_69eI)
