@@ -21,6 +21,7 @@ REM Screen
 adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 2147483647
 adb -s DEVICE_IP:5555 shell wm size 1920x1080
 adb -s DEVICE_IP:5555 shell wm density 215
+adb -s DEVICE_IP:5555 shell settings put system font_scale  1.15
 
 REM Launcher
 adb -s DEVICE_IP:5555 shell settings put global policy_control immersive.full=*
@@ -42,6 +43,7 @@ REM Screen
 adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 60000
 adb -s DEVICE_IP:5555 shell wm size reset
 adb -s DEVICE_IP:5555 shell wm density reset
+adb -s DEVICE_IP:5555 shell settings put system font_scale  1.0
 
 REM Rotation
 adb -s DEVICE_IP:5555 shell content insert --uri content://settings/system --bind name:s:accelerometer_rotation --bind value:i:1
