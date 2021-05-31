@@ -4,12 +4,12 @@ REM ADB Patch
 cd "c:\adb\"
 
 REM Device Information (optional)
-adb -s DEVICE_ID shell wm density
-adb -s DEVICE_ID shell wm size 
-adb -s DEVICE_ID shell getprop ro.product.model
-adb -s DEVICE_ID shell getprop ro.build.version.release
-adb -s DEVICE_ID shell getprop ro.product.board
-adb -s DEVICE_ID shell dumpsys battery
+REM adb -s DEVICE_ID shell wm density
+REM adb -s DEVICE_ID shell wm size 
+REM adb -s DEVICE_ID shell getprop ro.product.model
+REM adb -s DEVICE_ID shell getprop ro.build.version.release
+REM adb -s DEVICE_ID shell getprop ro.product.board
+REM adb -s DEVICE_ID shell dumpsys battery
 
 REM Screen
 adb -s DEVICE_ID shell wm size 1920x1080
