@@ -14,6 +14,7 @@ adb -s DEVICE_ID shell dumpsys battery
 REM Screen
 adb -s DEVICE_ID shell wm size 1920x1080
 adb -s DEVICE_ID shell wm density 215
+adb -s DEVICE_ID shell settings put system font_scale  1.15
 
 REM Launcher
 adb -s DEVICE_ID shell settings put global policy_control immersive.full=*
@@ -34,6 +35,7 @@ scrcpy -s DEVICE_ID --render-driver=direct3d --rotation 0 -m1366 -b80M --max-fps
 REM Screen
 adb -s DEVICE_ID shell wm size reset
 adb -s DEVICE_ID shell wm density reset
+adb -s DEVICE_ID shell settings put system font_scale  1.0
 
 REM Rotation
 adb -s DEVICE_ID shell content insert --uri content://settings/system --bind name:s:accelerometer_rotation --bind value:i:1
