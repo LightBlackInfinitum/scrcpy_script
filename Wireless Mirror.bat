@@ -23,6 +23,12 @@ adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 2147483647
 REM Keyboard
 adb -s DEVICE_IP:5555 shell ime set com.wparam.nullkeyboard/.NullKeyboard
 
+REM Stuff
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+
 
 REM Scrcpy
 scrcpy -s DEVICE_IP:5555 --render-driver=direct3d -m1366 -b6M --max-fps 30 -f -w --disable-screensaver --window-title 'ANDROID-DESKTOP'
@@ -33,6 +39,9 @@ adb -s DEVICE_IP:5555 shell ime set com.google.android.inputmethod.latin/com.and
 
 REM Screen
 adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 60000
+
+REM Stuff
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
 
 echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
 pause
