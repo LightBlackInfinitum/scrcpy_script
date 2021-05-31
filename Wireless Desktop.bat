@@ -34,6 +34,12 @@ adb -s DEVICE_IP:5555 shell content insert --uri content://settings/system --bin
 REM Keyboard
 adb -s DEVICE_IP:5555 shell ime set com.wparam.nullkeyboard/.NullKeyboard
 
+REM Stuff
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
+
 
 REM Scrcpy
 scrcpy -s DEVICE_IP:5555 --render-driver=direct3d --rotation 0 -m1366 -b6M --max-fps 30 -f -Sw --disable-screensaver --window-title 'ANDROID-DESKTOP'
@@ -56,6 +62,9 @@ adb -s DEVICE_IP:5555 shell cmd package set-home-activity bitpit.launcher/.ui.Ho
 adb -s DEVICE_IP:5555 shell am force-stop com.farmerbb.taskbar
 adb -s DEVICE_IP:5555 shell settings put global policy_control null*
 adb -s DEVICE_IP:5555 shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+REM Stuff
+adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
 
 echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
 pause
