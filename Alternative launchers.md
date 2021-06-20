@@ -1,5 +1,12 @@
 ## Launchers
-Here's a list of adb commands to use the script with other launchers. New suggestions are welcome :)
+Here's a list of adb commands to use the script with alternative launchers. New suggestions are welcome :)
+
+#### Default Launchers:
+ - Taskbar Launcher:
+`adb -s DEVICE_ID shell cmd package set-home-activity com.farmerbb.taskbar/.activity.HomeActivity`
+
+ - Niagara Launcher:
+`adb -s DEVICE_ID shell cmd package set-home-activity bitpit.launcher/.ui.HomeActivity`
 
 #### Desktop Mode:
  - Sentio Launcher:
