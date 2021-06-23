@@ -72,5 +72,4 @@ REM Stuff
 adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
 
 echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
-pause
 timeout /t 10 /nobreak >nul
