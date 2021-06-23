@@ -29,6 +29,9 @@ adb -s DEVICE_IP:5555 shell pm enable com.farmerbb.taskbar
 adb -s DEVICE_IP:5555 shell pm disable-user bitpit.launcher
 adb -s DEVICE_IP:5555 shell cmd package set-home-activity com.farmerbb.taskbar/.activity.HomeActivity
 adb -s DEVICE_IP:5555 shell cmd notification allow_listener com.farmerbb.taskbar/com.farmerbb.taskbar.service.NotificationCountService
+adb -s DEVICE_IP:5555 shell settings put secure enabled_accessibility_services com.farmerbb.taskbar/.a.i
+adb -s DEVICE_IP:5555 shell pm grant com.farmerbb.taskbar android.permission.WRITE_SECURE_SETTINGS
+adb -s DEVICE_IP:5555 shell settings put global enable_freeform_support 1
 adb -s DEVICE_IP:5555 shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
 
 REM Rotation
