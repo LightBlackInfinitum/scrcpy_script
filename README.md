@@ -25,6 +25,8 @@ Font Scale Values:
  - Large: `1.15`
  - Lagest: `1.30`
 
+If you're using Exagear, you may find helpful to add "--forward-all-clicks" to the Scrcpy line for better mouse compatibility.
+
 Do you use another launcher? Check [Alternative Launchers Commands](https://github.com/Blakenidby/scrcpy_script/blob/50e88375989b7d168b08204c75918ff8dfd56b61/Alternative%20launchers.md)
 ### More Information: 
 For more shortcuts/commands, check [Scrcpy repository](https://github.com/Genymobile/scrcpy) and [ADB commands](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8).
