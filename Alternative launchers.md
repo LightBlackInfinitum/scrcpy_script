@@ -16,3 +16,6 @@ Here's a list of adb commands to use the script with alternative launchers. New 
 #### Phone Mode:
  - Microsoft Launcher:
 `adb -s DEVICE_ID shell Testing`
+
+ - AIO Launcher:
+`adb -s DEVICE_ID shell cmd package set-home-activity ru.execbit.aiolauncher/ru.execbit.aiolauncher.ui.MainActivity`
