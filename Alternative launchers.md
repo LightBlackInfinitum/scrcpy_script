@@ -19,3 +19,9 @@ Here's a list of adb commands to use the script with alternative launchers. New 
 
  - AIO Launcher:
 `adb -s DEVICE_ID shell cmd package set-home-activity ru.execbit.aiolauncher/ru.execbit.aiolauncher.ui.MainActivity`
+
+ - Lawnchair 2 Launcher:
+`adb -s DEVICE_ID shell cmd package set-home-activity ch.deletescape.lawnchair.plah/ch.deletescape.lawnchair.LawnchairLauncher`
+
+ - Lawnchair 11 Launcher:
+`adb -s DEVICE_ID shell cmd package set-home-activity app.lawnchair/app.lawnchair.LawnchairLauncher`
