@@ -43,5 +43,5 @@ adb -s DEVICE_IP:5555 shell settings put system screen_off_timeout 60000
 REM Stuff
 adb -s DEVICE_IP:5555 shell cmd vibrator vibrate 100
 
-echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
+echo "REMEMBER VISIT US: https://t.me/ScrcpyDesktop"
 timeout /t 10 /nobreak >nul
