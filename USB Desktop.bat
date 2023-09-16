@@ -66,5 +66,5 @@ adb -s DEVICE_ID shell am start -W -c android.intent.category.HOME -a android.in
 REM Stuff
 adb -s DEVICE_ID shell cmd vibrator vibrate 100
 
-echo "REMEMBER VISIT US: https://t.me/joinchat/SLlAIfdCFxLeexVB"
+echo "REMEMBER VISIT US: https://t.me/ScrcpyDesktop"
 timeout /t 10 /nobreak >nul
