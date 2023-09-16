@@ -31,12 +31,12 @@ Do you use another launcher? Check [Alternative Launchers Commands](https://gith
 ### More Information: 
 For more shortcuts/commands, check [Scrcpy repository](https://github.com/Genymobile/scrcpy) and [ADB commands](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8).
 
-[Telegram Group](https://t.me/joinchat/SLlAIfdCFxLeexVB)
+[Telegram Group](https://t.me/ScrcpyDesktop)
 
 [Demostration video](https://youtu.be/n6CgGz_69eI)
 ### This batch script need the below elements to work:
 * [Scrcpy](https://github.com/Genymobile/scrcpy)
 * [Taskbar Launcher](https://github.com/farmerbb/Taskbar)
 * [Niagara Launcher](https://github.com/8bitPit/Niagara-Issues)
-* [Null Keyboard](https://play.google.com/store/apps/details?id=com.wparam.nullkeyboard&hl=en)
+* [Null Keyboard - Only available on Telegram Group]
 * [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin&hl=en)
