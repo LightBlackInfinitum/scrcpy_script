@@ -18,6 +18,8 @@ If you have lag issues, try to play with `-m1360` and `-b10M`.
 WIRELESS SCRIPT: `Screen Time Out value 60000 = 1 minute`.
  
 You can play with your phone resolution and aspect ratio using `adb shell wm size`.
+
+Please check the keyboard you are using to avoid language problems
  
 Font Scale Values:
  - Small: `0.85`
